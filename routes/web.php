@@ -27,3 +27,5 @@ Route::middleware([
 });
 
 route::get('/home', [AdminController::class,'index']);
+
+route::get('/create_room',[AdminController::class,'create_room']);
