@@ -3,6 +3,19 @@
 <head>
     @include('admin.css')
     <title>create_room</title>
+    <style type="text/css">
+      label{
+        display: inline-block;
+        width: 200px
+      }
+      .div_deg{
+        padding-top: 30px; 
+      }
+      .dev_center{
+        text-align: center;
+        padding-top: 40px;
+      }
+    </style>
 </head>
 <body>
     @include('admin.header')
@@ -33,10 +46,44 @@
         <div class="page-content">
             <div class="page-header">
                 <div class="container-fluid">
-                    <div>
+                    <div class="dev_center">
+                      <h1>Add Room</h1>
                         <form action="">
-                            <label for="">Room Title</label>
-                            <input type="text" name="title" id="">
+                            <div class="div_deg">
+                                <label for="">Room Title</label>
+                                <input type="text" name="title" id="">
+                            </div>
+                            <div class="div_deg">
+                                <label for="">Description</label>
+                                <textarea name="description" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="div_deg">
+                                <label for="">Price</label>
+                                <input type="number" name="price" id="">
+                            </div>
+                            <div class="div_deg">
+                              <label for="">Room type</label>
+                              <select name="type" id="">
+                                <option value="regular">Regular</option>
+                                <option value="premium">Premium</option>
+                                <option value="deluxe">Deluxe</option>
+                              </select>
+                            </div>
+                            <div class="div_deg">
+                              <label for="">Free Wifi</label>
+                              <select name="wifi" id="">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                              </select>
+                            </div>
+                            <div class="div_deg">
+                              <label for="">Upload Image</label>
+                              <input type="file" name="image">
+                            </div>
+
+                            <div class="div_deg">
+                              <input class="btn btn-primary" type="submit" value="Add Room">
+                            </div>
                         </form>
                     </div>
                 </div>
