@@ -36,8 +36,8 @@
                   <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Example dropdown </a>
                     <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
                       <li><a href="{{url('create_room')}}">Add room</a></li>
-                      <li><a href="#">Page</a></li>
-                      <li><a href="#">Page</a></li>
+                      <li><a href="{{url('view_room)')}}">View Room</a></li>
+                      
                     </ul>
                   </li>
           </ul>
