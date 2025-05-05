@@ -48,7 +48,9 @@
                 <div class="container-fluid">
                     <div class="dev_center">
                       <h1>Add Room</h1>
-                        <form action="">
+                        <form action="{{url('add_room')}}" method="post" enctype="multipart/form-data">
+
+                          @csrf
                             <div class="div_deg">
                                 <label for="">Room Title</label>
                                 <input type="text" name="title" id="">
