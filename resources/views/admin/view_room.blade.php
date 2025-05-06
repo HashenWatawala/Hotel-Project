@@ -7,6 +7,9 @@
         .table_deg{
             border: 2px solid white;
         }
+        tr{
+            border: 3px solid white;
+        }
     </style>
 </head>
 <body>
@@ -47,18 +50,26 @@
                             <th scope="col">Wifi</th>
                             <th scope="col">Room Type</th>
                             <th scope="col">Image</th>
+                            <th scope="col">Delete</th>
                           </tr>
                         </thead>
                         <tbody>
                             @foreach ($data as $data)
                                 
-                            @endforeach
                           <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>{{$data->room_title}}</td>
+                            <td>{{$data->description}}</td>
+                            <td>{{$data->price}}</td>
+                            <td>{{$data->wifi}}</td>
+                            <td>{{$data->room_type}}</td>
+                            <td>
+                                <img style="width: 60px" src="room/{{$data->image}}" alt="">
+                            </td>
+                            <td>
+                              <a class="btn btn-danger" href="{{url('room_delete',$data->id)}}">Delete</a>
+                            </td>
                           </tr>
+                          @endforeach
                         </tbody>
                       </table>
                 </div>

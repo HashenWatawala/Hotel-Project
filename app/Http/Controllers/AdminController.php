@@ -65,6 +65,14 @@ class AdminController extends Controller
         
         $data = Room::all();
 
-        return view('admin.view_room');
+        return view('admin.view_room',compact('data'));
+    }
+
+    public function room_delete($id){
+
+        $data = Room::find($id);
+        $data->delete();
+
+        return redirect()->back();
     }
 }
