@@ -66,7 +66,7 @@
                                 <img style="width: 60px" src="room/{{$data->image}}" alt="">
                             </td>
                             <td>
-                              <a class="btn btn-danger" href="{{url('room_delete',$data->id)}}">Delete</a>
+                              <a onclick="return confirm('Are you sure want to delete this!')"; class="btn btn-danger" href="{{url('room_delete',$data->id)}}">Delete</a>
                             </td>
                           </tr>
                           @endforeach
