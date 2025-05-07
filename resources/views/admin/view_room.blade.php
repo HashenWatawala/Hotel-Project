@@ -51,6 +51,7 @@
                             <th scope="col">Room Type</th>
                             <th scope="col">Image</th>
                             <th scope="col">Delete</th>
+                            <th scope="col">Update</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -67,6 +68,9 @@
                             </td>
                             <td>
                               <a onclick="return confirm('Are you sure want to delete this!')"; class="btn btn-danger" href="{{url('room_delete',$data->id)}}">Delete</a>
+                            </td>
+                            <td>
+                              <a class="btn btn-warning" href="{{url('room_delete',$data->id)}}">Update</a>
                             </td>
                           </tr>
                           @endforeach
