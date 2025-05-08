@@ -54,19 +54,20 @@
                           @csrf
                             <div class="div_deg">
                                 <label for="">Room Title</label>
-                                <input type="text" name="title" id="">
+                                <input type="text" name="title" id="" value="{{$data->room_title}}">
                             </div>
                             <div class="div_deg">
                                 <label for="">Description</label>
-                                <textarea name="description" id="" cols="30" rows="10"></textarea>
+                                <textarea name="description" id="" cols="30" rows="10">{{$data->description}}</textarea>
                             </div>
                             <div class="div_deg">
                                 <label for="">Price</label>
-                                <input type="number" name="price" id="">
+                                <input type="number" name="price" id="" value="{{$data->price}}">
                             </div>
                             <div class="div_deg">
                               <label for="">Room type</label>
                               <select name="type" id="">
+                                <option selected value="{{$data->room_type}}">{{$data->room_type}}</option>
                                 <option value="regular">Regular</option>
                                 <option value="premium">Premium</option>
                                 <option value="deluxe">Deluxe</option>
@@ -75,6 +76,7 @@
                             <div class="div_deg">
                               <label for="">Free Wifi</label>
                               <select name="wifi" id="">
+                                <option selected value="{{$data->wifi}}">{{$data->wifi}}</option>
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
                               </select>
