@@ -37,3 +37,5 @@ route::get('/view_room', [AdminController::class,'view_room']);
 route::get('/room_delete/{id}', [AdminController::class,'room_delete']);
 
 route::get('/room_update/{id}', [AdminController::class,'room_update']);
+
+route::post('/edit_room/{id}',[AdminController::class,'edit_room']);

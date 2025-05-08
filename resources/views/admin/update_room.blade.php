@@ -49,7 +49,7 @@
                 <div class="container-fluid">
                     <div class="dev_center">
                       <h1>Update Room</h1>
-                        <form action="{{url('add_room')}}" method="post" enctype="multipart/form-data">
+                        <form action="{{url('edit_room', $data->id)}}" method="post" enctype="multipart/form-data">
 
                           @csrf
                             <div class="div_deg">
@@ -82,12 +82,17 @@
                               </select>
                             </div>
                             <div class="div_deg">
+                              <label for="">Current Image</label>
+                              <img style="padding-left: 40%;" src="/room/{{$data->image}}" alt="">
+                            </div>
+
+                            <div class="div_deg">
                               <label for="">Upload Image</label>
                               <input type="file" name="image">
                             </div>
 
                             <div class="div_deg">
-                              <input class="btn btn-primary" type="submit" value="Add Room">
+                              <input class="btn btn-primary" type="submit" value="Upadate room">
                             </div>
                         </form>
                     </div>
