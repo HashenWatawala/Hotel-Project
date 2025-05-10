@@ -212,7 +212,7 @@
                      </div>
                      <div class="bed_room">
                         <h3>{{$rooms->room_title}}</h3>
-                        <p>{{$rooms->description}}</p>
+                        <p>{!! Str::limit($rooms->description,100)!!}</p>
                      </div>
                   </div>
                </div>
