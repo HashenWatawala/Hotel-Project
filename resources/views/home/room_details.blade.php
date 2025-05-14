@@ -117,14 +117,17 @@
             
                 
             
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4">
                <div id="serv_hover"  class="room">
                   <div class="room_img">
-                     <figure><img style="height:200px; width:350px" src="" alt="#"/></figure>
+                     <figure><img style="padding: 20px" src="/room/{{$room->image}}" alt="#"/></figure>
                   </div>
                   <div class="bed_room">
-                     <h3></h3>
-                     <p></p>
+                     <h3>{{$room->room_title}}</h3>
+                     <p style="padding: 12px">{{$room->description}}</p>
+                     <h4>Free Wifi : {{$room->wifi}}</h4>
+                     <h4>Room Type : {{$room->room_type}}</h4>
+                     <h3>Price : {{$room->price}}</h3>
                   
                   </div>
                </div>
