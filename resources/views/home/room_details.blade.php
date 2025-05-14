@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <base href="/public">
         <!-- basic -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,7 @@
         <meta name="author" content="">
         <!-- bootstrap css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <base href="/public">
+        
         <!-- style css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -102,6 +103,35 @@
            </div>
         </div>
      </header>
+     <div  class="our_room">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Our Room</h2>
+                  <p>Lorem Ipsum available, but the majority have suffered </p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            
+                
+            
+            <div class="col-md-4 col-sm-6">
+               <div id="serv_hover"  class="room">
+                  <div class="room_img">
+                     <figure><img style="height:200px; width:350px" src="" alt="#"/></figure>
+                  </div>
+                  <div class="bed_room">
+                     <h3></h3>
+                     <p></p>
+                  
+                  </div>
+               </div>
+            </div>
+            
+      </div>
+   </div>
      <footer>
         <div class="footer">
            <div class="container">
