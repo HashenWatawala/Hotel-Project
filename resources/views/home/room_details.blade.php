@@ -132,7 +132,41 @@
                   </div>
                </div>
             </div>
-            
+            <div class="col-md-8">
+               <div>
+                  <label for="">Name</label>
+                  <input type="text" name="name">
+               </div>
+
+               <div>
+                  <label for="">Email</label>
+                  <input type="email" name="email">
+               </div>
+
+               <div>
+                  <label for="">Phone</label>
+                  <input type="number" name="phone">
+               </div>
+
+               <div>
+                  <label for="">Start Date</label>
+                  <input type="date" name="startDate" id="startDate">
+               </div>
+
+               <div>
+                  <label for="">End Date</label>
+                  <input type="date" name="endDate" id="endDate">
+               </div>
+
+               <div>
+                  <label for=""></label>
+                  <input type="submit" class="btn btn-primary" value="Book Room">
+               </div>
+
+               <div>
+                  input
+               </div>
+            </div>
       </div>
    </div>
      <footer>
