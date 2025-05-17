@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <style type="text/css">
+         label{
+            display: inline-block;
+            width: 200px;
+         }
+         input{
+            width: 100%;
+         }
+      </style>
       <base href="/public">
         <!-- basic -->
         <meta charset="utf-8">
