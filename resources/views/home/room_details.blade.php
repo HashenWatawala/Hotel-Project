@@ -142,6 +142,9 @@
                </div>
             </div>
             <div class="col-md-8">
+               <h1>Booking Room</h1>
+
+               <form action="{{url('add_booking', $room->id)}}" method="post">
                <div>
                   <label for="">Name</label>
                   <input type="text" name="name">
@@ -171,10 +174,7 @@
                   <label for=""></label>
                   <input type="submit" class="btn btn-primary" value="Book Room">
                </div>
-
-               <div>
-                  input
-               </div>
+            </form>
             </div>
       </div>
    </div>
