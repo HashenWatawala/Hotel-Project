@@ -171,7 +171,6 @@
                </div>
 
                <div>
-                  <label for=""></label>
                   <input type="submit" class="btn btn-primary" value="Book Room">
                </div>
             </form>
