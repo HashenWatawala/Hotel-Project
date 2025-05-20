@@ -142,25 +142,47 @@
                </div>
             </div>
             <div class="col-md-8">
-               <h1>Booking Room</h1>
+               <h1 style="font-size: 40px">Booking Room</h1>
 
+               @if ($errors)
+
+               @foreach ($errors->all() as $errors)
+
+               <li style="color: red">
+                  {{$errors}}
+               </li>
                
+               @endforeach
+               
+               @endif
 
                <form action="{{url('add_booking', $room->id)}}" method="post">
                   @csrf
                <div>
                   <label for="">Name</label>
-                  <input type="text" name="name">
+                  <input type="text" name="name"
+                  @if (Auth::id())
+                  
+                  value="{{Auth::user()->name}}"
+                  @endif>
                </div>
 
                <div>
                   <label for="">Email</label>
-                  <input type="email" name="email">
+                  <input type="email" name="email"  
+                  @if (Auth::id())
+                  
+                  value="{{Auth::user()->email}}"
+                  @endif>
                </div>
 
                <div>
                   <label for="">Phone</label>
-                  <input type="number" name="phone">
+                  <input type="number" name="phone"
+                  @if (Auth::id())
+                  
+                  value="{{Auth::user()->phone}}"
+                  @endif>
                </div>
 
                <div>

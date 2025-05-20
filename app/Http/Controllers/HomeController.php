@@ -16,6 +16,11 @@ class HomeController extends Controller
 
     public function add_booking(Request $request, $id){
 
+        $request->validate([
+            'startDate' => 'required|date',
+            'endDate' => 'date|after:startDate',
+        ]);
+
         $data  = new Booking;
 
         $data->room_id = $id;
