@@ -24,9 +24,9 @@ class HomeController extends Controller
 
         $data->email = $request->email;
 
-        $data->start_data = $request->start_data;
+        $data->start_date = $request->startDate;
 
-        $data->end_data = $request->end_data;
+        $data->end_date = $request->endDate;
 
         $data->save();
 

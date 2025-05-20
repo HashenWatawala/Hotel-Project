@@ -144,7 +144,10 @@
             <div class="col-md-8">
                <h1>Booking Room</h1>
 
+               
+
                <form action="{{url('add_booking', $room->id)}}" method="post">
+                  @csrf
                <div>
                   <label for="">Name</label>
                   <input type="text" name="name">
