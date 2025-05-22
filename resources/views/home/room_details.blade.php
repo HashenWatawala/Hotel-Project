@@ -143,6 +143,11 @@
             </div>
             <div class="col-md-8">
                <h1 style="font-size: 40px">Booking Room</h1>
+               <div>
+               @if (session()->has('message'))
+               {{session()->get('message')}}
+               @endif
+               </div>
 
                @if ($errors)
 
