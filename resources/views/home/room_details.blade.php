@@ -24,6 +24,7 @@
         <meta name="author" content="">
         <!-- bootstrap css -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         
         <!-- style css -->
         <link rel="stylesheet" href="css/style.css">
@@ -145,7 +146,10 @@
                <h1 style="font-size: 40px">Booking Room</h1>
                <div>
                @if (session()->has('message'))
+               <div class="alert alert-success">
+                  <button type="button" class="close" data-bs-dismiss="alert">X</button>
                {{session()->get('message')}}
+               </div>
                @endif
                </div>
 
@@ -201,7 +205,7 @@
                </div>
 
                <div>
-                  <input type="submit" class="btn btn-primary" value="Book Room">
+                  <input type="submit" class="btn btn-primary" value="Book Room" style="background-color: skyblue">
                </div>
             </form>
             </div>
@@ -289,6 +293,7 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
    </body>
 </body>
 </html>
