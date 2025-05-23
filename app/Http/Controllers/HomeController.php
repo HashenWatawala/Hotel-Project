@@ -29,9 +29,15 @@ class HomeController extends Controller
 
         $data->email = $request->email;
 
-        $data->start_date = $request->startDate;
+        $startDate = $request->startDate;
+        
+        $endDate = $request->endDate;
 
-        $data->end_date = $request->endDate;
+        $isBooked = Booking::where('')
+
+       /* $data->start_date = $request->startDate; 
+
+        $data->end_date = $request->endDate;*/
 
         $data->save();
 
