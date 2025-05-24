@@ -102,4 +102,7 @@ class AdminController extends Controller
         return redirect()->back();
 
     }
+    public function bookings(){
+        return view('admin.booking');
+    }
 }
