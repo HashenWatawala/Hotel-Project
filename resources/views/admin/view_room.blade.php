@@ -63,14 +63,9 @@
                             <td>{{$data->price}}</td>
                             <td>{{$data->wifi}}</td>
                             <td>{{$data->room_type}}</td>
+                            
                             <td>
                                 <img width="100" src="room/{{$data->image}}" alt="">
-                            </td>
-                            <td>
-                              <a onclick="return confirm('Are you sure want to delete this!')"; class="btn btn-danger" href="{{url('room_delete',$data->id)}}">Delete</a>
-                            </td>
-                            <td>
-                              <a class="btn btn-warning" href="{{url('room_update',$data->id)}}">Update</a>
                             </td>
                           </tr>
                           @endforeach
