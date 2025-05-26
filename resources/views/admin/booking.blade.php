@@ -34,25 +34,31 @@
               <table class="table table_deg">
                 <thead>
                   <tr>
-                    <th scope="col">Room Title</th>
-                    <th scope="col">Customer name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Arrival Date</th>
-                    <th scope="col">Leaving Date</th>
+                    <th class="th_deg" scope="col">Room ID</th>
+                    <th class="th_deg" scope="col">Customer name</th>
+                    <th class="th_deg" scope="col">Email</th>
+                    <th class="th_deg" scope="col">Phone</th>
+                    <th class="th_deg" scope="col">Arrival Date</th>
+                    <th class="th_deg" scope="col">Leaving Date</th>
+                    <th class="th_deg" >Status</th>
                   </tr>
                 </thead>
                 <tbody>
                    
+                   @foreach ($data as $data)
+                   
                         
                   <tr>
-                    <td>ABCD</td>
-                    <td>ABCD</td>
-                    <td>ABCD</td>
-                    <td>ABCD</td>
-                    <td>ABCD</td>
+                    <td>{{$data->room_id}}</td>
+                    <td>{{$data->name}}</td>
+                    <td>{{$data->email}}</td>
+                    <td>{{$data->phone}}</td>
+                    <td>{{$data->start_date}}</td>
+                    <td>{{$data->end_date}}</td>
+                    <td>{{$data->status}}</td>
                     
                   </tr>
+                  @endforeach
                 
                 </tbody>
               </table>

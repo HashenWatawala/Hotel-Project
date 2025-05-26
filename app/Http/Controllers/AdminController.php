@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\Room;
 
+use App\Models\Booking;
+
 class AdminController extends Controller
 {
     public function index(){
@@ -103,6 +105,7 @@ class AdminController extends Controller
 
     }
     public function bookings(){
-        return view('admin.booking');
+        $data = Booking::all();
+        return view('admin.booking', compact('data'));
     }
 }
