@@ -41,6 +41,7 @@
                     <th class="th_deg" scope="col">Arrival Date</th>
                     <th class="th_deg" scope="col">Leaving Date</th>
                     <th class="th_deg" >Status</th>
+                    <th class="th_deg" >Room Title</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -56,6 +57,7 @@
                     <td>{{$data->start_date}}</td>
                     <td>{{$data->end_date}}</td>
                     <td>{{$data->status}}</td>
+                    <td>{{$data->room->room_title}}</td>
                     
                   </tr>
                   @endforeach
