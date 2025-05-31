@@ -68,7 +68,9 @@
                       <a onclick="return confirm('Are you sure want to delete this')" class="btn btn-danger" href="{{url('delete_booking', $data->id)}}">Delete</a>
                     </td>
                     <td>
-                      <a class="btn btn-success" href="">Approve</a>
+                      <span style="padding-bottom: 10px">
+                      <a class="btn btn-success" href="{{url('approve_book', $data->id)}}">Approve</a>
+                      </span>
                       <a class="btn btn-warning" href="">Rejected</a>
                     </td>
                     
