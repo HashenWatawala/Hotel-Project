@@ -116,7 +116,13 @@ class AdminController extends Controller
     }
     public function approve_book($id){
         $bookings = Booking::find($id);
-        $bookings->sataus = 'approve';
+        $bookings->status = 'approve';
+        $bookings->save();
+        return redirect()->back();
+    }
+    public function reject_book($id){
+        $bookings = Booking::find($id);
+        $bookings->status = 'rejected';
         $bookings->save();
         return redirect()->back();
     }
