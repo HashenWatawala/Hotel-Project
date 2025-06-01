@@ -26,6 +26,9 @@
                   </ul>
                 </li>
                 <li><a href="{{url('bookings')}}"> <i class="icon-home"></i>Bookings</a></li>
+                <li>
+                  <a href="{{url('view_gallary')}}"><i class=""></i>Gallary</a>
+                </li>
         </ul>
       </nav>
       <!-- Sidebar Navigation end-->

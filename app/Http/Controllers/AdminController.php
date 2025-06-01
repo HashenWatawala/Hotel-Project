@@ -126,4 +126,7 @@ class AdminController extends Controller
         $bookings->save();
         return redirect()->back();
     }
+    public function view_gallary(){
+        return view('admin.gallary');
+    }
 }
