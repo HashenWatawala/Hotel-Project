@@ -34,6 +34,21 @@
       <div class="page-content">
         <div class="page-header">
             <div class="container-fluid">
+              <center>
+              <h1>
+                Gallary
+              </h1>
+              <form action="{{url('upload_gallary')}}" method="Post" enctype="multipart/form-data">
+                <div>
+                  <label for="">Upload Image</label>
+                  <input type="file" name="image">
+                </div>
+
+                <div>
+                  <input type="submit" name="Add Image">
+                </div>
+              </form>
+              </center>
             </div>
         </div>
       </div>
