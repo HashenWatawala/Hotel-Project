@@ -38,14 +38,21 @@
               <h1>
                 Gallary
               </h1>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                @foreach ($gallary as $gallary)
+                  <img style="height: 200px !important; width: 300px !important; object-fit: cover;" src="/gallary/{{$gallary->image}}" alt="">
+                  <a class="btn btn-danger" href="{{url('delete_gallary')}}">Delete</a>
+                  @endforeach
+              </div>
               <form action="{{url('upload_gallary')}}" method="Post" enctype="multipart/form-data">
-                <div>
-                  <label for="">Upload Image</label>
+                @csrf
+                <div style="padding: 30px">
+                  <label style="color: white; font-weight: bold;">Upload Image</label>
                   <input type="file" name="image">
                 </div>
 
                 <div>
-                  <input type="submit" name="Add Image">
+                  <input class="btn btn-primary" type="submit" name="Add Image">
                 </div>
               </form>
               </center>
