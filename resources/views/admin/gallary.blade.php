@@ -41,7 +41,7 @@
               <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
                 @foreach ($gallary as $gallary)
                   <img style="height: 200px !important; width: 300px !important; object-fit: cover;" src="/gallary/{{$gallary->image}}" alt="">
-                  <a class="btn btn-danger" href="{{url('delete_gallary')}}">Delete</a>
+                  <a class="btn btn-danger" href="{{url('delete_gallary', $gallary->id)}}">Delete</a>
                   @endforeach
               </div>
               <form action="{{url('upload_gallary')}}" method="Post" enctype="multipart/form-data">
