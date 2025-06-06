@@ -311,6 +311,7 @@
             <div class="row">
                <div class="col-md-6">
                   <form id="request" class="main_form" action="{{url('contact')}}" method="post">
+                     @csrf
                      <div class="row">
                         <div class="col-md-12 ">
                            <input class="contactus" placeholder="Name" type="type" name="name"> 
