@@ -306,6 +306,15 @@
                   <div class="titlepage">
                      <h2>Contact Us</h2>
                   </div>
+                  @if (session()->has('message'))
+
+                  <div>
+                     <button type="button" class="close" data-bs-dismiss='alert'>X</button>
+
+                  {{session()->get('message')}}
+
+                  </div>
+                  @endif
                </div>
             </div>
             <div class="row">
@@ -323,7 +332,7 @@
                            <input class="contactus" placeholder="Phone Number" type="type" name="phone">                          
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
+                           <textarea class="textarea" placeholder="Message" type="type" name="message">Message</textarea>
                         </div>
                         <div class="col-md-12">
                            <button class="send_btn">Send</button>

@@ -64,7 +64,7 @@ class HomeController extends Controller
         $contact->phone = $request->phone;
         $contact->message = $request->message;
         $contact->save();
-        return redirect()->back();
+        return redirect()->back()->with('message', 'Message sent Successfully');
     }
     //
 }
