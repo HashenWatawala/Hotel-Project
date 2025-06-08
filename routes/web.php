@@ -63,4 +63,4 @@ route::get('/delete_gallary/{id}',[AdminController::class,'delete_gallary']);
 
 route::post('/contact',[HomeController::class,'contact']);
 
-route::post('/all_messages',[AdminController::class,'all_messages']);
+route::get('/all_messages',[AdminController::class,'all_messages']);
