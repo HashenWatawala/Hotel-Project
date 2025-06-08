@@ -29,6 +29,9 @@
                 <li>
                   <a href="{{url('view_gallary')}}"><i class=""></i>Gallary</a>
                 </li>
+                <li>
+                  <a href="{{url('all_messages')}}"><i class=""></i>Messages</a>
+                </li>
         </ul>
       </nav>
       <!-- Sidebar Navigation end-->

@@ -154,4 +154,8 @@ class AdminController extends Controller
         $data->delete();
         return redirect()->back();
     }
+
+    public function all_messages (){
+        return view('admin.all_messages');
+    }
 }
