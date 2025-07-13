@@ -13,6 +13,9 @@ use App\Models\Room;
 use App\Models\Booking;
 
 use App\Models\gallary;
+
+use App\Models\Contact;
+
 class AdminController extends Controller
 {
     public function index(){
@@ -156,6 +159,7 @@ class AdminController extends Controller
     }
 
     public function all_messages (){
-        return view('admin.all_messages');
+        $data = Contact::all();
+        return view('admin.all_messages', compact('data'));
     }
 }

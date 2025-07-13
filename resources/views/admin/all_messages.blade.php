@@ -48,15 +48,15 @@
                 </thead>
                 <tbody>
 
-                        
+                  @foreach ($data as $data)     
                   <tr>
-                    <td>ABCD</td>
-                    <td>ABCD</td>
-                    <td>ABCD</td>
-                    <td>ABCD</td>
+                    <td>{{$data->name}}</td>
+                    <td>{{$data->email}}</td>
+                    <td>{{$data->phone}}</td>
+                    <td>{{$data->message}}</td>
                     
                   </tr>
-
+                  @endforeach
                 </tbody>
               </table>
             </div>
