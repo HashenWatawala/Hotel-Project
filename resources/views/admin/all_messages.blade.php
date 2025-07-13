@@ -34,6 +34,34 @@
                 </li>
         </ul>
       </nav>
+      <div class="page-content">
+        <div class="page-header">
+            <div class="container-fluid">
+              <table class="table table_deg">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Message</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                        
+                  <tr>
+                    <td>ABCD</td>
+                    <td>ABCD</td>
+                    <td>ABCD</td>
+                    <td>ABCD</td>
+                    
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
     <footer class="footer">
         <div class="footer__block block no-margin-bottom">
           <div class="container-fluid text-center">
