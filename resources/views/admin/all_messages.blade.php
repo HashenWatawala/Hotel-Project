@@ -44,6 +44,7 @@
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
                     <th scope="col">Message</th>
+                    <th scope="col">Send Email</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -54,7 +55,9 @@
                     <td>{{$data->email}}</td>
                     <td>{{$data->phone}}</td>
                     <td>{{$data->message}}</td>
-                    
+                    <td>
+                      <a class="btn btn-success" href="{{url('send_mail', $data->id)}}">Send Email</a>
+                    </td>
                   </tr>
                   @endforeach
                 </tbody>
