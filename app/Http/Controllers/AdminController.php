@@ -162,4 +162,9 @@ class AdminController extends Controller
         $data = Contact::all();
         return view('admin.all_messages', compact('data'));
     }
+
+    public function send_mail($id){
+        $data = Contact::find($id);
+        return view('admin.send_mail', compact('data'));
+    }
 }
