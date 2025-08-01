@@ -16,6 +16,10 @@ use App\Models\gallary;
 
 use App\Models\Contact;
 
+use App\Notifications\SendEmailNotification;
+use Illuminate\Support\Facades\Notification;
+
+
 class AdminController extends Controller
 {
     public function index(){
@@ -166,5 +170,20 @@ class AdminController extends Controller
     public function send_mail($id){
         $data = Contact::find($id);
         return view('admin.send_mail', compact('data'));
+    }
+
+    public function mail(Request $request, $id){
+        $data = Contact::find($id);
+        $details = [
+            'greeting' => $request->greeting,
+            'body' => $request->body,
+            'action_text' => $request->action_text,
+            'action_url' => $request->action_url,
+            'endline' => $request->endline,
+        ];
+
+        Notification::send($data, new SendEmailNotification($details));
+
+        return redirect()->back();
     }
 }

@@ -76,7 +76,7 @@
           <center>
             <h1 style="font-size: 30px; font-weight: bold;">Mail send to {{$data->name}}</h1>
 
-            <form action="" method="post">
+            <form action="{{url('mail', $data->id)}}" method="post">
 
               @csrf
               <div class="div_deg">
